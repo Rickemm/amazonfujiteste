@@ -1,0 +1,23 @@
+<div class="usersContainer">
+  <div class="userContent" *ngFor="let user of users">
+    <p>Nome: {{user.name}}</p>
+    <p>E-mail: {{user.email}}</p>
+    <p>Idade: {{user.age}}</p>
+    <p>Peso: {{user.weight}}</p>
+    <p>Altura: {{user.height}}</p>
+    <span class="line"></span>
+    <ul class="plus-info">
+      <p>Endereços:</p>
+      <li></li>
+    </ul>
+    <ul class="plus-info">
+      <p>Contatos:</p>
+      <li></li>
+    </ul>
+    <ul class="plus-info">
+      <p>Habilidades:</p>
+      <li></li>
+    </ul>
+    <button type="button" (click)="deleteUser(user.id)">x</button>
+  </div>
+</div>

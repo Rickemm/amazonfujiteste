@@ -1,0 +1,40 @@
+.headerContainer{
+  height: 3rem;
+  border-bottom: 1px solid #525252;
+}
+
+.headerContent{
+  max-width: 1120px;
+  height: 3rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  button{
+    width: 5rem;
+    height: 5rem;
+    background: #8dd43b;
+    border: 3px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+
+    position: absolute;
+    top: 0.4rem;
+    left: 5rem;
+
+    transition: filter 0.2s;
+
+    &:hover{
+      filter: brightness(0.95)
+    }
+  }
+
+  .login {
+    margin-left: auto;
+  }
+}

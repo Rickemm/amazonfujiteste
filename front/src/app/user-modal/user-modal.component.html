@@ -1,0 +1,19 @@
+<div class="modalContainer">
+  <h1>Formulário de Usuário</h1>
+  <button class="close" (click)="onClose()">x</button>
+  <form>
+    <input placeholder="Nome" type="text" name="name" [(ngModel)]="user.name">
+
+    <input placeholder="E-mail" type="text" name="email" [(ngModel)]="user.email">
+
+    <input placeholder="Senha" type="text" name="password" [(ngModel)]="user.password">
+
+    <input placeholder="Idade" type="number" name="age" [(ngModel)]="user.age">
+
+    <input placeholder="Peso" type="number" name="weight" [(ngModel)]="user.weight">
+
+    <input placeholder="Altura" type="number" name="height" [(ngModel)]="user.height">
+
+    <button type="button" (click)="saveUser()">Cadastrar</button>
+  </form>
+</div>

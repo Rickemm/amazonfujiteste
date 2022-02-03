@@ -1,0 +1,43 @@
+.modalContainer{
+  position: relative;
+  padding: 2rem;
+
+  form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    input{
+      width: 100%;
+      height: 2.5rem;
+      border-radius: 8px;
+      border: 1px solid #b4b4b4;
+      margin-top: 1rem;
+      padding-left: 1rem;
+    }
+
+    button{
+      width: 300px;
+      height: 70px;
+      background: #3d73e7;
+      color: white;
+      margin: 0 auto;
+      margin-top: 1rem;
+      border-radius: 15px;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .close{
+    border: none;
+    background: none;
+    color: #5d5e5d;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+  }
+}
