@@ -1,0 +1,86 @@
+-------------- TESTE SQUAD PROGRAMAÇÃO AMAZONFUJI ---------------
+
+
+Olá participante, o teste será FullStack, ou seja, testaremos sua capacidade tanto em frontend como em backend.
+
+Tempo para realização do teste: 72 horas
+
+Para backend você deverá desenvolver uma API utilizando o framework Nestjs que integrará com um banco de dados
+de sua escolha (Mysql, Postgress, etc)
+
+Seu banco de dados deverá ter as seguintes tabelas:
+
+Pessoas (usuário)
+Enderecos
+Contatos
+Habilidades
+
+A tabela Pessoas é a principal e fará relacionamento UM PARA MUITOS com as demais, sendo assim... um
+usuário pode ter vários enderecos, vários contatos e várias habilidades
+
+Sua API deverá fazer esses relacionamentos e manipulá-los utilizando CRUD (create, read, update, delete) e
+um sistema básico de login.
+
+Diferencial: tipar os dados (o framework utiliza Typescript) e salvar a senha no banco em hash
+
+
+
+
+Para frontend você deverá desenvolver uma aplicação Web utilizando o framework Angular que consumirá os dados
+da API, onde terá um sistema de login e um dashboard para ver os usuários registrados na API
+
+Diferencial: Fazer um botão para excluir o usuário e outro para editar.
+
+Dica: Não esqueça de habilitar o CORS na sua API
+
+Exemplo JSON:
+ 
+{
+	"nome": "Livrodjx",
+	"email": "livrodjx@gmail.com",
+	"password": "123",
+	"idade": 20,
+	"peso": "70",
+	"altura": "1.79",
+	"enderecos": [
+		{
+			"logradouro": "Meu logradouro",
+			"bairro": "sim",
+			"cidade": "Sao Paulo",
+			"estado": "São Paulo",
+			"pais": "Brasil"
+		},
+		{
+			"logradouro": "Esse é o logradouro",
+			"bairro": "sim2",
+			"cidade": "Uberlandia",
+			"estado": "Minas Gerais",
+			"pais": "Brasil"
+		}
+	],
+	"contatos": [
+		{
+			"tipo": "celular",
+			"contato": "11977191837"
+		},
+		{
+			"tipo": "email",
+			"contato": "livrodjx@gmail.com"
+		}
+	],
+	"habilidades": [
+		{
+			"nivel": "Iniciante",
+			"habilidade": "Programação",
+			"tempo_experiencia": "2 anos"
+		},
+		{
+			"nivel": "Avançado",
+			"habilidade": "Jogar",
+			"tempo_experiencia": "20 anos"
+		}
+	]
+}
+
+
+BOA SORTE !
